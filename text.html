@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <style>
+.heart-container {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.heart-icon, .heart-icon-filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+}
+
+.heart-icon {
+  color: #ccc;
+}
+
+.heart-icon-filled {
+  color: red;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+.heart-icon.filled {
+  opacity: 0;
+}
+
+.heart-icon-filled.filled {
+  opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="heart-container">
+        <i class="heart-icon far fa-heart"></i>
+        <i class="heart-icon-filled fas fa-heart"></i>
+      </div>
+      
+      <script>
+        const heartContainer = document.querySelector('.heart-container');
+const heartIcon = document.querySelector('.heart-icon');
+const heartFilledIcon = document.querySelector('.heart-icon-filled');
+
+heartContainer.addEventListener('click', () => {
+  heartIcon.classList.toggle('filled');
+  heartFilledIcon.classList.toggle('filled');
+});
+      </script>  
+</body>
+</html>

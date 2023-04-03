@@ -1,0 +1,107 @@
+@font-face{
+    font-family: 'Inter-Medium';
+    src: url('Font/Inter-Medium.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Inter-Regular';
+    src: url('Font/Inter-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'LexendDeca-Regular';
+    src: url('Font/LexendDeca-Regular.ttf') format('truetype');
+}
+*{
+    box-sizing: boder-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F3F5F7;
+}
+header{
+    background-image: linear-gradient(#574AE8,#3EA1DB);
+    padding-bottom: 15px;
+}
+#tudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 590px;
+}
+#titulo{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+#titulo > p{
+    color: #FFFFFF;
+    font-family: 'LexendDeca-Regular', sans-serif;
+    font-weight: 400;
+}
+#icone-pesquisa{
+    color: #FFFFFF;
+    background-color: #ffffff28;
+    padding: 5px;
+}
+#pesquisa{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px;
+    min-width: 570;
+}
+#pesquisa > input{
+    height: 14px;
+    width: 480px;
+    background-color: #ffffff28;
+    color: white;
+}
+input::placeholder{
+    color: #FFFFFF;
+    opacity: calc(50%);
+}
+input:focus{
+    outline: 0;
+}
+.container{
+    margin: 30px 10px;
+}
+section{
+    background-color: #FFFFFF;
+    margin: auto;
+    max-width: 500px;
+    padding: 15px;
+    box-shadow: 0px 0px 8px #dddddd;
+}
+.linha1{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.heart-icon, .heart-icon-filled {
+    position: absolute;
+    translate: calc(-20px);
+    cursor: pointer;
+ }
+.heart-icon {
+    color: #574AE8;
+}
+.heart-icon-filled {
+    color: #574AE8;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+.heart-icon.filled {
+    opacity: 0;
+}
+  
+.heart-icon-filled.filled {
+    opacity: 1;
+}
+  
+section>h3{
+    padding-bottom: 10px;
+}
