@@ -14,6 +14,7 @@
     box-sizing: boder-box;
     padding: 0;
     margin: 0;
+    font-family: 'LexendDeca-Regular', sans-serif;
 }
 body{
     background-color: #F3F5F7;
@@ -36,7 +37,6 @@ header{
 }
 #titulo > p{
     color: #FFFFFF;
-    font-family: 'LexendDeca-Regular', sans-serif;
     font-weight: 400;
 }
 #icone-pesquisa{
@@ -104,4 +104,14 @@ section{
   
 section>h3{
     padding-bottom: 10px;
+    font-weight: 600;
+}
+.linha1>.datab{
+    font-size: 10px;
+    color: #717171;
+}
+section>p{
+    font-size: 15px;
+    font-weight: 200px;
+    color: #3a3a3a;
 }
